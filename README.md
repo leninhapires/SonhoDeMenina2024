@@ -58,3 +58,4 @@ Fontes: Utilização das fontes "Great Vibes" e "Quicksand" via Google Fonts. �
 Imagem de fundo: Imagens utilizadas do repositório local de imagens. 🖼️
 Esse projeto foi desenvolvido por Francilene S. Pires e está disponível para contribuições. 🌟
 
+BYE!!!# SonhoDeMenina2024
