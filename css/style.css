@@ -158,3 +158,110 @@ footer{
 .section-fade-visible {
     opacity: 1;
 }
+
+
+/* Layout para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Reduzir o tamanho da fonte para telas menores */
+    }
+
+    header {
+        flex-direction: column; /* Tornar o cabeçalho vertical em vez de horizontal */
+        align-items: center;
+    }
+
+    nav {
+        width: 100%; /* Garantir que o menu ocupe toda a largura da tela */
+        text-align: center;
+    }
+
+    .decorative-image {
+        width: 80%; /* Tornar a imagem decorativa responsiva */
+    }
+
+    .main-image {
+        width: 100%; /* Tornar a imagem principal responsiva */
+    }
+
+    .flower-border {
+        height: 100px; /* Ajustar a altura da borda floral */
+    }
+
+    .buttons {
+        flex-direction: column; /* Botões empilhados em telas menores */
+        gap: 10px;
+    }
+
+    .button {
+        width: 100%; /* Tornar os botões de largura total */
+        padding: 12px 0;
+    }
+
+    .participantes img {
+        width: 100%; /* Tornar a imagem dos participantes responsiva */
+        height: auto; /* Manter a proporção da imagem */
+        top: 0;
+    }
+
+    .section-fade {
+        padding: 10px; /* Adicionar um pouco de padding */
+    }
+
+    .dados {
+        justify-content: center; /* Alterar a direção das informações */
+    }
+
+    .info p {
+        font-size: 30px; /* Ajustar o tamanho da fonte das informações */
+    }
+
+    .mapa iframe {
+        width: auto; /* Tornar o iframe do mapa responsivo */
+        height: auto; /* Ajustar a altura do mapa */
+    }
+}
+
+/* Layout para telas médias (tablets) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 20px; /* Ajuste da fonte para tablets */
+    }
+
+    .buttons {
+        gap: 20px; /* Ajuste da distância entre os botões */
+    }
+
+    .button {
+        padding: 12px 30px;
+    }
+
+    .participantes img {
+        height: auto; /* Imagem adaptada */
+        width: 90%; /* Ajustar imagem para telas médias */
+    }
+
+    .flower-border {
+        height: 120px; /* Ajustar altura da borda floral */
+    }
+}
+
+/* Layout para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 25px; /* Tamanho de fonte para telas grandes */
+    }
+
+    .main-image {
+        width: 80vh; /* Imagem principal maior */
+    }
+
+    .flower-border {
+        height: 150px;
+    }
+
+    .participantes img {
+        width: 80vw; /* Ajustar a imagem para telas grandes */
+        height: auto;
+    }
+}
