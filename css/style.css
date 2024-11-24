@@ -1,0 +1,160 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: "Quicksand", serif;
+    background-color: #fcecf5;
+    color: #5d387f;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+header {
+    display: inline-flex;
+    justify-content: center;
+    gap: 100%;
+    margin-top: 10px;
+
+}
+
+nav {
+    height: 50px;
+    width: 200px;
+}
+
+.decorative-image {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+main p {
+    z-index: 5;
+    top: -150px;
+    position: relative;
+    background: linear-gradient(to top, #5d387f, #5d387f5b, #5d387fa9);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-family: "Great Vibes", serif;
+    ;
+    margin: 10px;
+
+}
+
+
+.main-image {
+    width: 80vh;
+    position: relative;
+
+
+}
+
+
+.flower-border {
+    background: url('/img/flores-base.png') repeat-x center bottom;
+    height: 150px;
+    position: relative;
+    top: -150px;
+    z-index: 2;
+}
+
+.buttons {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #d4a5f4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b47adb;
+}
+
+
+/*section2*/
+
+.flower-border-section {
+    background: url('/img/flores-base\ -\ Copia.png') repeat-x center bottom;
+    height: 250px;
+    position: relative;
+    top: -100px;
+    z-index: 2;
+}
+
+.participantes img {
+    height: 100vh;
+    width: auto;
+    position: relative;
+    top: -150px;
+
+}
+section .participantes {
+    height: 100vh;
+    width: auto;
+    position: relative;
+   
+}
+
+/*section 3 */
+
+section .dados{
+    display: inline-flex;
+    height: 100vh;
+    width: auto;
+}
+.info{
+    width:100vh;
+    height: 50%;
+}
+.info p{
+    font-size: 40px;
+    
+}
+.mapa iframe{
+    width:100vh;
+    height: 50%;
+}
+
+footer{
+    background-color: #b47adb31;
+ 
+}
+.petala {
+    position: absolute;
+    top: -50px;
+    opacity: 0;
+    animation: cair 5s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/*scrol*/
+.section-fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.section-fade-visible {
+    opacity: 1;
+}
